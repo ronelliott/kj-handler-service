@@ -1,0 +1,37 @@
+{
+  "name": "kj-handler-service",
+  "version": "0.0.0",
+  "description": "Service handler for the kj webapp framework.",
+  "author": "Ron Elliott <ronaldbelliott@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "webapp",
+    "framework",
+    "handler",
+    "service"
+  ],
+  "scripts": {
+    "coverage:upload": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "mocha",
+    "test:coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.11",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.0.0-1",
+    "reflekt": "^0.3.9",
+    "should": "^9.0.2",
+    "sinon": "^2.0.0-pre.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronelliott/kj-handler-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ronelliott/kj-handler-service/issues"
+  },
+  "homepage": "https://github.com/ronelliott/kj-handler-service#readme",
+  "dependencies": {
+    "is": "^3.1.0"
+  }
+}
